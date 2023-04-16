@@ -1,28 +1,28 @@
 .PHONY: connect
 
 curl:
-	python3 coralmicro/scripts/flashtool.py -e curl --subapp curl_wifi --wifi_config wifi.txt
+	python3 athena-v1/coralmicro/scripts/flashtool.py -e curl --subapp curl_wifi --wifi_config wifi.txt
 
 pose:
-	python3 coralmicro/scripts/flashtool.py -a multicore_model_cascade --subapp multicore_model_cascade_wifi --wifi_config wifi.txt
+	python3 athena-v1/coralmicro/scripts/flashtool.py -a multicore_model_cascade --subapp multicore_model_cascade_wifi --wifi_config wifi.txt
 
 console:
-	screen /dev/cu.usbmodem101 115200
+	screen /dev/cu.usbmodem* 115200
 
 bare-face:
-	python3 coralmicro/scripts/flashtool.py -e detect_faces --nodata
+	python3 athena-v1/coralmicro/scripts/flashtool.py -e detect_faces --nodata
 
 face:
-	python3 coralmicro/scripts/flashtool.py -e detect_faces
+	python3 athena-v1/coralmicro/scripts/flashtool.py -e detect_faces
 
 camera:
-	python3 coralmicro/apps/multicore_model_cascade/multicore_model_cascade.py --device_ip_address $(IP)
+	python3 athena-v1/coralmicro/apps/multicore_model_cascade/multicore_model_cascade.py --device_ip_address $(IP)
 
 stream:
-	python3 coralmicro/scripts/flashtool.py -e camera_streaming_rpc --subapp camera_streaming_rpc_wifi --wifi_config wifi.txt
+	python3 athena-v1/coralmicro/scripts/flashtool.py -e camera_streaming_rpc --subapp camera_streaming_rpc_wifi --wifi_config wifi.txt
 
 rpc:
-	python3 coralmicro/examples/camera_streaming_rpc/camera_streaming_app.py --host_ip $(IP)
+	python3 athena-v1/coralmicro/examples/camera_streaming_rpc/camera_streaming_app.py --host_ip $(IP)
 
 segment:
-	python3 coralmicro/scripts/flashtool.py -e segment_poses --wifi_config wifi.txt
+	python3 athena-v1/coralmicro/scripts/flashtool.py -e segment_poses --wifi_config wifi.txt
