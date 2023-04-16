@@ -1,2 +1,5 @@
-snapshots/*.jpg
+snapshots
 wifi.txt
+credentials.json
+.env
+speech.mp3

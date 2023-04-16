@@ -4,3 +4,6 @@
 [submodule "projects/athena/athena-x"]
 	path = projects/athena/athena-x
 	url = git@github.com:teamrevspace/athena-x.git
+[submodule "projects/athena/athena-web"]
+	path = projects/athena/athena-web
+	url = git@github.com:teamrevspace/athena-web.git
