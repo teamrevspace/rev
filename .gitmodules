@@ -1,6 +1,6 @@
 [submodule "projects/athena/coralmicro"]
 	path = projects/athena/coralmicro
-	url = https://github.com/google-coral/coralmicro
+	url = https://github.com/teamrevspace/coralmicro
 [submodule "projects/coralmicro-out-of-tree-sample"]
 	path = projects/coralmicro-out-of-tree-sample
 	url = https://github.com/teamrevspace/coralmicro-out-of-tree-sample
