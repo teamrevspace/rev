@@ -1,6 +1,3 @@
-[submodule "projects/athena/coralmicro"]
-	path = projects/athena/coralmicro
-	url = https://github.com/teamrevspace/coralmicro
-[submodule "projects/coralmicro-out-of-tree-sample"]
-	path = projects/coralmicro-out-of-tree-sample
-	url = https://github.com/teamrevspace/coralmicro-out-of-tree-sample
+[submodule "projects/athena/athena-v1"]
+	path = projects/athena/athena-v1
+	url = git@github.com:teamrevspace/athena-v1.git
