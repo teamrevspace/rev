@@ -26,3 +26,7 @@ rpc:
 
 segment:
 	python3 athena-x/coralmicro/scripts/flashtool.py -e segment_poses --wifi_config wifi.txt
+
+speech:
+	python3 athena-x/coralmicro/scripts/flashtool.py -e classify_speech
+
